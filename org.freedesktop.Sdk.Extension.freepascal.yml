@@ -46,17 +46,17 @@ modules:
       - type: archive
         only-arches:
           - x86_64
-        url: 'ftp://mirror.freemirror.org/pub/fpc/dist/3.2.2/x86_64-linux/fpc-3.2.2.x86_64-linux.tar'
+        url: 'https://downloads.sourceforge.net/project/freepascal/Linux/3.2.2/fpc-3.2.2.x86_64-linux.tar'
         sha256: 5adac308a5534b6a76446d8311fc340747cbb7edeaacfe6b651493ff3fe31e83
 
       - type: archive
         only-arches:
           - aarch64
-        url: 'ftp://mirror.freemirror.org/pub/fpc/dist/3.2.2/aarch64-linux/fpc-3.2.2.aarch64-linux.tar'
+        url: 'https://downloads.sourceforge.net/project/freepascal/Linux/3.2.2/fpc-3.2.2.aarch64-linux.tar'
         sha256: b39470f9b6b5b82f50fc8680a5da37d2834f2129c65c24c5628a80894d565451
 
       - type: archive
-        url: 'ftp://mirror.freemirror.org/pub/fpc/dist/3.2.2/source/fpcbuild-3.2.2.tar.gz'
+        url: 'https://downloads.sourceforge.net/project/freepascal/Source/3.2.2/fpcbuild-3.2.2.tar.gz'
         sha256: 85ef993043bb83f999e2212f1bca766eb71f6f973d362e2290475dbaaf50161f
 
       - type: patch
@@ -83,12 +83,12 @@ modules:
       - install -Dm644 -t $LAZARUSDIR tools/install/linux/environmentoptions.xml
     sources: 
       - type: archive
-        url: 'https://downloads.sourceforge.net/project/lazarus/Lazarus%20Zip%20_%20GZip/Lazarus%202.2.6/lazarus-2.2.6-0.tar.gz'
-        sha256: 39f4cf98c0a94b39a058e733baa62f1c1d5dcfa6599dc57bc5efc4c0d08c485c
+        url: 'https://downloads.sourceforge.net/project/lazarus/Lazarus%20Zip%20_%20GZip/Lazarus%203.2/lazarus-3.2-0.tar.gz'
+        sha256: 69f43f0a10b9e09deea5f35094c73b84464b82d3f40d8a2fcfcb5a5ab03c6edf
         x-checker-data:
           type: anitya
           project-id: 1538
-          url-template: 'https://downloads.sourceforge.net/project/lazarus/Lazarus%20Zip%20_%20GZip/Lazarus%20$major.$minor.$patch/lazarus-$version.tar.gz'
+          url-template: 'https://downloads.sourceforge.net/project/lazarus/Lazarus%20Zip%20_%20GZip/Lazarus%20$major.$minor/lazarus-$version.tar.gz'
 
   - name: script
     buildsystem: simple
